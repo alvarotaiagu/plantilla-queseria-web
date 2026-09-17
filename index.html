@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  SITIO DE DEMOSTRACIÓN — Queixería Bardanca es un obrador
+  FICTICIO. Nombre, dirección, teléfonos, quesos, precios,
+  mercados, visitas y opiniones son de muestra y no corresponden
+  a ninguna quesería real. No se atribuye ninguna denominación
+  de origen ni ningún premio.
+  Plantilla pensada para reskinear a un cliente real del sector.
+  ============================================================
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Queixería Bardanca · Obrador de queso de leche cruda en Palas de Rei</title>
+<meta name="description" content="Obrador pequeño de queso de leche cruda en la Ulloa: cuatro quesos, una cava de maduración y venta en el obrador y en mercados. Sitio de demostración: negocio ficticio.">
+<meta name="theme-color" content="#f2e9d6">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.json">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Queixería Bardanca · Obrador de queso en Palas de Rei">
+<meta property="og:description" content="La corteza es el diario del queso. Obrador ficticio de demostración.">
+<meta property="og:image" content="assets/og.png">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..800;1,300..600&family=Petrona:ital,wght@0,300..700;1,300..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "additionalType": "https://schema.org/Store",
+  "name": "Queixería Bardanca",
+  "description": "Obrador artesanal de queso de leche cruda con tienda propia. Negocio ficticio de demostración.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Lugar de Bardanca, 11",
+    "postalCode": "27200",
+    "addressLocality": "Palas de Rei",
+    "addressRegion": "Lugo",
+    "addressCountry": "ES"
+  },
+  "telephone": "+34 982 00 00 21",
+  "email": "obrador@bardanca.example",
+  "servesCuisine": "Queso artesano",
+  "priceRange": "9 € – 23 € la pieza",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "14:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Friday"], "opens": "16:30", "closes": "19:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "10:00", "closes": "14:00" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__caja">
+    <svg class="preloader__marca" viewBox="0 0 120 120" role="presentation" focusable="false">
+      <circle class="preloader__rueda" cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="7" pathLength="1"></circle>
+      <path class="preloader__cuna" d="M60 60 60 16A44 44 0 0 1 98 38Z" fill="currentColor" opacity=".9"></path>
+    </svg>
+    <span class="preloader__palabra">Bardanca</span>
+  </div>
+</div>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera" id="cabecera">
+  <a class="marca" href="#inicio" aria-label="Queixería Bardanca, inicio">
+    <svg class="marca__icono" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+      <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="3"></circle>
+      <path d="M20 20 20 3a17 17 0 0 1 14.7 8.5Z" fill="currentColor"></path>
+      <circle cx="13" cy="26" r="2.2" fill="currentColor" opacity=".55"></circle>
+      <circle cx="24" cy="28" r="1.6" fill="currentColor" opacity=".45"></circle>
+    </svg>
+    <span class="marca__texto">
+      <span class="marca__nombre">Bardanca</span>
+      <span class="marca__bajada">obrador de queso · Palas de Rei</span>
+    </span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Navegación principal">
+    <ul class="nav__lista">
+      <li><a href="#corteza">La corteza</a></li>
+      <li><a href="#quesos">Los quesos</a></li>
+      <li><a href="#leche">La leche</a></li>
+      <li><a href="#cava">La cava</a></li>
+      <li><a href="#comprar">Dónde comprar</a></li>
+    </ul>
+    <a class="boton boton--paja magnetico" href="#visitas">Visitar el obrador</a>
+  </nav>
+
+  <button class="hamburguesa" id="hamburguesa" type="button" aria-expanded="false" aria-controls="nav">
+    <span class="hamburguesa__caja" aria-hidden="true"><i></i><i></i></span>
+    <span class="hamburguesa__texto">Menú</span>
+  </button>
+</header>
+
+<main id="contenido">
+
+  <!-- ============ 01 · HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero__texto">
+      <p class="hero__sobre">Obrador de leche cruda · Palas de Rei, Lugo · 40 piezas al día</p>
+      <h1 class="hero__titular" data-reveal>La corteza es el diario del queso</h1>
+      <p class="hero__entrada">Ahí está escrito todo: de qué vaca vino la leche, qué mes era, cuántas veces se volteó la pieza y cuánto tiempo estuvo en la cava. Nosotros solo la dejamos hacer.</p>
+      <div class="hero__acciones">
+        <a class="boton boton--paja magnetico" href="#quesos">Ver los cuatro quesos</a>
+        <a class="boton boton--linea magnetico" href="#corteza">Cómo cambia con el tiempo</a>
+      </div>
+      <dl class="hero__datos">
+        <div><dt>Piezas en la cava</dt><dd><span class="contador" data-hasta="640">640</span></dd></div>
+        <div><dt>Litros por pieza</dt><dd><span class="contador" data-hasta="9">9</span></dd></div>
+        <div><dt>Temperatura</dt><dd>11 °C</dd></div>
+      </dl>
+    </div>
+
+    <figure class="hero__rueda">
+      <svg class="rueda rueda--hero" viewBox="0 0 340 340" role="img" aria-label="Rueda de queso vista desde arriba, con una cuña cortada que deja ver la pasta">
+        <g class="rueda__sombra"><ellipse cx="170" cy="300" rx="128" ry="16"></ellipse></g>
+        <g class="rueda__cuerpo">
+          <circle class="rueda__corteza" cx="170" cy="170" r="128"></circle>
+          <circle class="rueda__pasta" cx="170" cy="170" r="112"></circle>
+          <g class="rueda__moho">
+            <circle cx="96" cy="120" r="11"></circle>
+            <circle cx="238" cy="132" r="8"></circle>
+            <circle cx="210" cy="252" r="13"></circle>
+            <circle cx="118" cy="236" r="7"></circle>
+            <circle cx="170" cy="86" r="6"></circle>
+            <circle cx="72" cy="188" r="9"></circle>
+            <circle cx="266" cy="200" r="6"></circle>
+          </g>
+        </g>
+        <g class="rueda__cuna" id="cunaHero">
+          <path class="rueda__cunaCorteza" d="M170 170 170 42a128 128 0 0 1 90 37Z"></path>
+          <path class="rueda__cunaPasta" d="M170 170 170 58a112 112 0 0 1 79 33Z"></path>
+          <g class="rueda__ojos">
+            <circle cx="186" cy="112" r="5"></circle>
+            <circle cx="206" cy="134" r="3.4"></circle>
+            <circle cx="176" cy="140" r="2.6"></circle>
+          </g>
+        </g>
+      </svg>
+      <figcaption>Pieza de 900 g, cortada a los noventa días.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ cinta ============ -->
+  <div class="cinta" aria-hidden="true">
+    <div class="cinta__pista" id="cintaPista">
+      <span>leche cruda de vaca</span><i>·</i><span>cuajo de cabrito</span><i>·</i>
+      <span>volteo a mano</span><i>·</i><span>cava a 11 grados</span><i>·</i>
+      <span>sin colorantes</span><i>·</i><span>cuatro quesos y nada más</span><i>·</i>
+    </div>
+  </div>
+
+  <!-- ============ 02 · LA CORTEZA (protagonista) ============ -->
+  <section class="corteza seccion" id="corteza">
+    <p class="seccion__indice"><span>01</span> La corteza</p>
+    <h2 class="titular titular--grande" data-reveal>Mueve el tiempo y mira lo que le pasa</h2>
+    <p class="corteza__entrada">La misma leche, la misma cuajada y la misma sala. Lo único que cambia es cuántos días lleva en la cava. Elige un tiempo de cura.</p>
+
+    <div class="cura" id="cura">
+      <div class="cura__mando" role="tablist" aria-label="Tiempo de curación">
+        <button class="cura__paso" role="tab" aria-selected="true" id="cura-0" aria-controls="curaPanel" data-cura="0"><b>20</b><span>días</span></button>
+        <button class="cura__paso" role="tab" aria-selected="false" tabindex="-1" id="cura-1" aria-controls="curaPanel" data-cura="1"><b>90</b><span>días</span></button>
+        <button class="cura__paso" role="tab" aria-selected="false" tabindex="-1" id="cura-2" aria-controls="curaPanel" data-cura="2"><b>180</b><span>días</span></button>
+        <button class="cura__paso" role="tab" aria-selected="false" tabindex="-1" id="cura-3" aria-controls="curaPanel" data-cura="3"><b>400</b><span>días</span></button>
+        <div class="cura__riel" aria-hidden="true"><i id="curaRiel"></i></div>
+      </div>
+
+      <div class="cura__panel" id="curaPanel" role="tabpanel" aria-labelledby="cura-0" tabindex="0">
+        <figure class="cura__dibujo">
+          <svg class="rueda rueda--cura" id="ruedaCura" viewBox="0 0 340 340" role="img" aria-labelledby="ruedaCuraTitulo">
+            <title id="ruedaCuraTitulo">Corte de la pieza: la corteza y la pasta cambian con los días de cura</title>
+            <g class="rueda__sombra"><ellipse cx="170" cy="304" rx="120" ry="14"></ellipse></g>
+            <!-- canto de la pieza -->
+            <g class="rueda__canto">
+              <path class="rueda__cantoCorteza" d="M46 128h248v84a124 42 0 0 1-248 0Z"></path>
+              <ellipse class="rueda__cantoTapa" cx="170" cy="128" rx="124" ry="42"></ellipse>
+              <g class="rueda__moho">
+                <circle cx="104" cy="124" r="10"></circle>
+                <circle cx="228" cy="116" r="7"></circle>
+                <circle cx="176" cy="142" r="12"></circle>
+                <circle cx="252" cy="150" r="6"></circle>
+                <circle cx="86" cy="164" r="8"></circle>
+                <circle cx="198" cy="188" r="9"></circle>
+                <circle cx="130" cy="202" r="6"></circle>
+              </g>
+            </g>
+            <!-- cuña separada, cara cortada a la vista -->
+            <g class="rueda__cuna rueda__cuna--suelta" id="cunaCura">
+              <path class="rueda__cunaCorteza" d="M212 196 300 152v70l-88 44Z"></path>
+              <path class="rueda__cunaPasta" d="M214 200 296 158v64l-82 40Z"></path>
+              <g class="rueda__ojos" id="ojosCura">
+                <circle cx="240" cy="198" r="6"></circle>
+                <circle cx="266" cy="188" r="4"></circle>
+                <circle cx="252" cy="222" r="5"></circle>
+                <circle cx="276" cy="216" r="3"></circle>
+              </g>
+              <g class="rueda__cristales" id="cristalesCura">
+                <path d="M236 214l3 3-3 3-3-3z"></path>
+                <path d="M258 204l2.6 2.6-2.6 2.6-2.6-2.6z"></path>
+                <path d="M272 230l2.4 2.4-2.4 2.4-2.4-2.4z"></path>
+                <path d="M246 236l2.4 2.4-2.4 2.4-2.4-2.4z"></path>
+              </g>
+            </g>
+          </svg>
+          <figcaption id="curaPie">A las tres semanas la corteza todavía no se ha formado del todo.</figcaption>
+        </figure>
+
+        <div class="cura__ficha">
+          <p class="cura__nombre" id="curaNombre">Tierno · 20 días</p>
+          <dl class="cura__datos">
+            <div><dt>Corteza</dt><dd id="curaCorteza">Fina, casi lisa, de color hueso</dd></div>
+            <div><dt>Pasta</dt><dd id="curaPasta">Blanca, elástica, con ojos de aguja</dd></div>
+            <div><dt>Sabe a</dt><dd id="curaSabor">Leche, mantequilla y un final ácido</dd></div>
+            <div><dt>Va bien con</dt><dd id="curaMarida">Pan de maíz, membrillo y un blanco joven</dd></div>
+          </dl>
+          <p class="cura__precio"><b id="curaPrecio">9,90 €</b> <span id="curaPeso">pieza de 900 g</span></p>
+          <p class="cura__nota">Precios de muestra para esta demostración. La pieza pierde peso a medida que cura: por eso la de 400 días pesa menos y cuesta más.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 · LOS QUESOS ============ -->
+  <section class="quesos seccion" id="quesos">
+    <p class="seccion__indice"><span>02</span> Los quesos</p>
+    <h2 class="titular" data-reveal>Cuatro, y no va a haber un quinto</h2>
+    <p class="quesos__entrada">Hacemos poco y siempre lo mismo. Cuando se acaba una hornada hay que esperar a la siguiente: no guardamos existencias para la tienda en línea.</p>
+
+    <div class="quesos__rejilla">
+      <article class="queso">
+        <figure data-mascara>
+          <img src="assets/fotos/queso-cava-1600.jpg" srcset="assets/fotos/queso-cava-800.jpg 800w, assets/fotos/queso-cava-1600.jpg 1600w" sizes="(max-width: 900px) 92vw, 44vw" width="1600" height="1069" loading="lazy" alt="Ruedas de queso madurando en las tablas de madera de una cava">
+        </figure>
+        <div class="queso__ficha">
+          <h3>Bardanca tierno</h3>
+          <p class="queso__lugar">Leche cruda de vaca · 20 días</p>
+          <p>El de todos los días. Funde bien, se pone en el bocadillo y se acaba sin darse cuenta.</p>
+          <dl class="queso__datos">
+            <div><dt>Peso</dt><dd>900 g</dd></div>
+            <div><dt>Cuajo</dt><dd>De cabrito</dd></div>
+            <div><dt>Corteza</dt><dd>Natural</dd></div>
+            <div><dt>Precio</dt><dd>9,90 €</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="queso">
+        <figure data-mascara>
+          <img src="assets/fotos/queso-corte-1600.jpg" srcset="assets/fotos/queso-corte-800.jpg 800w, assets/fotos/queso-corte-1600.jpg 1600w" sizes="(max-width: 900px) 92vw, 44vw" width="1600" height="1067" loading="lazy" alt="Manos cortando una cuña de queso de pasta blanda sobre una tabla">
+        </figure>
+        <div class="queso__ficha">
+          <h3>Bardanca de cava</h3>
+          <p class="queso__lugar">Leche cruda de vaca · 90 días</p>
+          <p>El que más vendemos en el mercado. Corteza gris de moho natural, cepillada una vez por semana.</p>
+          <dl class="queso__datos">
+            <div><dt>Peso</dt><dd>850 g</dd></div>
+            <div><dt>Cuajo</dt><dd>De cabrito</dd></div>
+            <div><dt>Corteza</dt><dd>Moho gris</dd></div>
+            <div><dt>Precio</dt><dd>12,50 €</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="queso">
+        <figure data-mascara>
+          <img src="assets/fotos/queso-tabla-1600.jpg" srcset="assets/fotos/queso-tabla-800.jpg 800w, assets/fotos/queso-tabla-1600.jpg 1600w" sizes="(max-width: 900px) 92vw, 44vw" width="1600" height="2400" loading="lazy" alt="Tabla de madera con queso azul, nueces y un cuchillo">
+        </figure>
+        <div class="queso__ficha">
+          <h3>Bardanca curado</h3>
+          <p class="queso__lugar">Leche cruda de vaca · 180 días</p>
+          <p>Aquí ya aparecen los cristales que crujen. Se corta fino y se come solo, sin pan que estorbe.</p>
+          <dl class="queso__datos">
+            <div><dt>Peso</dt><dd>800 g</dd></div>
+            <div><dt>Cuajo</dt><dd>De cabrito</dd></div>
+            <div><dt>Corteza</dt><dd>Parda, cepillada</dd></div>
+            <div><dt>Precio</dt><dd>16,00 €</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="queso">
+        <figure data-mascara>
+          <img src="assets/fotos/queso-obrador-1600.jpg" srcset="assets/fotos/queso-obrador-800.jpg 800w, assets/fotos/queso-obrador-1600.jpg 1600w" sizes="(max-width: 900px) 92vw, 44vw" width="1600" height="2400" loading="lazy" alt="Manos con guantes colocando moldes de queso en un carro de acero">
+        </figure>
+        <div class="queso__ficha">
+          <h3>Bardanca de invierno</h3>
+          <p class="queso__lugar">Leche cruda de vaca · 400 días</p>
+          <p>Solo de la leche de noviembre a febrero, que es la más grasa. Salen 120 piezas al año y se reservan.</p>
+          <dl class="queso__datos">
+            <div><dt>Peso</dt><dd>750 g</dd></div>
+            <div><dt>Cuajo</dt><dd>De cabrito</dd></div>
+            <div><dt>Corteza</dt><dd>Lavada, oscura</dd></div>
+            <div><dt>Precio</dt><dd>23,00 €</dd></div>
+          </dl>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 04 · LA LECHE ============ -->
+  <section class="leche" id="leche">
+    <div class="seccion">
+      <p class="seccion__indice"><span>03</span> La leche</p>
+      <div class="leche__rejilla">
+        <div class="leche__texto">
+          <h2 class="titular" data-reveal>La leche de mayo no es la leche de enero</h2>
+          <p>Trabajamos con dos ganaderías de la parroquia, las dos de pasto. Cuando las vacas salen al prado, en abril, la leche sube de carotenos y la pasta del queso se pone amarilla sola. En invierno, con silo y heno, la leche es más grasa y el queso aguanta mejor una cura larga.</p>
+          <p>Por eso el queso de invierno solo se hace en invierno. No es marketing: es que en julio no sale igual.</p>
+          <ul class="leche__claves">
+            <li><b>Abril a septiembre</b><span>Pasto. Pasta amarilla, aroma vegetal, curas cortas.</span></li>
+            <li><b>Octubre a marzo</b><span>Establo. Más grasa, pasta pálida, curas largas.</span></li>
+            <li><b>Siempre</b><span>Leche cruda, recogida por la mañana y cuajada antes de las once.</span></li>
+          </ul>
+        </div>
+
+        <figure class="leche__grafico">
+          <svg viewBox="0 0 420 260" role="img" aria-label="Gráfico de muestra: la grasa de la leche sube en invierno y el pasto sube en verano">
+            <g class="grafico__ejes">
+              <path d="M40 210h360M40 30v180"></path>
+              <g class="grafico__mes">
+                <text x="40" y="228">E</text><text x="70" y="228">F</text><text x="100" y="228">M</text>
+                <text x="130" y="228">A</text><text x="160" y="228">M</text><text x="190" y="228">J</text>
+                <text x="220" y="228">J</text><text x="250" y="228">A</text><text x="280" y="228">S</text>
+                <text x="310" y="228">O</text><text x="340" y="228">N</text><text x="370" y="228">D</text>
+              </g>
+            </g>
+            <path class="grafico__linea grafico__linea--grasa" pathLength="1" d="M40 66 70 72 100 88 130 112 160 136 190 156 220 166 250 160 280 142 310 116 340 88 370 70"></path>
+            <path class="grafico__linea grafico__linea--pasto" pathLength="1" d="M40 190 70 186 100 160 130 108 160 66 190 52 220 58 250 70 280 92 310 130 340 168 370 186"></path>
+            <g class="grafico__leyenda">
+              <rect x="44" y="36" width="10" height="3" class="llave llave--grasa"></rect>
+              <text x="60" y="41">grasa de la leche</text>
+              <rect x="170" y="36" width="10" height="3" class="llave llave--pasto"></rect>
+              <text x="186" y="41">hierba en el prado</text>
+            </g>
+          </svg>
+          <figcaption>Curvas de muestra, dibujadas para esta demostración: no son datos medidos.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 · LA CAVA ============ -->
+  <section class="cava seccion" id="cava">
+    <p class="seccion__indice"><span>04</span> La cava</p>
+    <div class="cava__rejilla">
+      <figure class="cava__foto" data-mascara>
+        <img src="assets/fotos/cava-1600.jpg" srcset="assets/fotos/cava-800.jpg 800w, assets/fotos/cava-1600.jpg 1600w" sizes="(max-width: 900px) 92vw, 46vw" width="1600" height="2133" loading="lazy" alt="Pasillo de la cava con las tablas llenas de ruedas de queso">
+      </figure>
+      <div class="cava__texto">
+        <h2 class="titular" data-reveal>Once grados, ochenta y ocho de humedad y mucha paciencia</h2>
+        <p>La cava está medio enterrada en la ladera, que es lo que hace el trabajo de frío casi todo el año. Las tablas son de pino sin tratar; se lavan a mano y se secan al sol, porque una tabla barnizada no deja respirar a la pieza.</p>
+        <dl class="cava__cifras">
+          <div><dt>Temperatura</dt><dd>11 °C</dd></div>
+          <div><dt>Humedad</dt><dd>88 %</dd></div>
+          <div><dt>Piezas</dt><dd><span class="contador" data-hasta="640">640</span></dd></div>
+          <div><dt>Volteos por pieza</dt><dd><span class="contador" data-hasta="57">57</span></dd></div>
+        </dl>
+        <p class="cava__pie">Cada pieza se voltea y se cepilla a mano dos veces por semana el primer mes, y una vez por semana el resto de su vida en la cava. Eso son casi sesenta veces en un queso de invierno.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 · DÓNDE COMPRAR ============ -->
+  <section class="comprar seccion" id="comprar">
+    <p class="seccion__indice"><span>05</span> Dónde comprar</p>
+    <h2 class="titular" data-reveal>En el obrador, en tres mercados y en ningún sitio más</h2>
+
+    <div class="comprar__rejilla">
+      <div class="tienda">
+        <h3>La tienda del obrador</h3>
+        <p class="estado" id="estado"><span class="estado__punto" aria-hidden="true"></span><span id="estadoTexto">Comprobando el horario…</span></p>
+        <table class="horario">
+          <caption class="visualmente-oculto">Horario de la tienda del obrador</caption>
+          <tbody id="horarioCuerpo">
+            <tr><th scope="row">Lunes</th><td>Cerrado</td></tr>
+            <tr><th scope="row">Martes</th><td>Cerrado</td></tr>
+            <tr><th scope="row">Miércoles</th><td>10:00 – 14:00 · 16:30 – 19:30</td></tr>
+            <tr><th scope="row">Jueves</th><td>10:00 – 14:00 · 16:30 – 19:30</td></tr>
+            <tr><th scope="row">Viernes</th><td>10:00 – 14:00 · 16:30 – 19:30</td></tr>
+            <tr><th scope="row">Sábado</th><td>10:00 – 14:00</td></tr>
+            <tr><th scope="row">Domingo</th><td>Cerrado</td></tr>
+          </tbody>
+        </table>
+        <p class="tienda__nota">En la tienda hay siempre las cuatro piezas, cortadas al peso o enteras. Si quieres una pieza concreta de la cava, avisa el día antes.</p>
+      </div>
+
+      <div class="mercados">
+        <h3>Mercados</h3>
+        <ul class="mercados__lista">
+          <li><p class="mercado__dia"><b>Martes</b><span>9:00 – 14:00</span></p><div><h4>Feira de Palas de Rei</h4><p>Puesto de la esquina, junto a la carnicería.</p></div></li>
+          <li><p class="mercado__dia"><b>Jueves</b><span>9:00 – 14:00</span></p><div><h4>Praza de Abastos de Lugo</h4><p>Segundo pasillo, puesto 14. Es el día que llevamos más curado.</p></div></li>
+          <li><p class="mercado__dia"><b>1.º sábado</b><span>10:00 – 15:00</span></p><div><h4>Mercado de la tierra, Melide</h4><p>Solo el primer sábado de cada mes, y en agosto no vamos.</p></div></li>
+        </ul>
+        <div class="envios">
+          <h4>Envíos</h4>
+          <p>Mandamos a toda la península en frío, los martes. Pedido mínimo de dos piezas, 7,50 € de transporte, gratis a partir de 60 €. Se encarga por teléfono o WhatsApp; no hay tienda en línea porque no queremos vender lo que no hay.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 07 · VISITAS ============ -->
+  <section class="visitas seccion" id="visitas">
+    <p class="seccion__indice"><span>06</span> Visitas</p>
+    <div class="visitas__rejilla">
+      <div>
+        <h2 class="titular" data-reveal>Ver cuajar es más aburrido de lo que parece, y aun así vienen</h2>
+        <p>Enseñamos el obrador los viernes por la mañana, cuando se cuaja. Se ve la leche entrar, cortar la cuajada, llenar los moldes y bajar a la cava. Dura una hora larga y acaba con una cata de los cuatro quesos.</p>
+        <ul class="visitas__lista">
+          <li><span>Cuándo</span><b>Viernes a las 10:30</b></li>
+          <li><span>Cuánto dura</span><b>75 minutos</b></li>
+          <li><span>Precio</span><b>12 € por persona</b></li>
+          <li><span>Grupo</span><b>De 4 a 12 personas</b></li>
+          <li><span>Menores</span><b>Gratis hasta 12 años</b></li>
+          <li><span>Reserva</span><b>Por teléfono, hasta el jueves</b></li>
+        </ul>
+        <p class="visitas__nota">Hay que entrar con calzado cerrado y bata, que la damos nosotros. En la sala de cuajado no se puede entrar con perro.</p>
+      </div>
+
+      <div class="visitas__lado">
+        <figure data-mascara>
+          <img src="assets/fotos/leche-1600.jpg" srcset="assets/fotos/leche-800.jpg 800w, assets/fotos/leche-1600.jpg 1600w" sizes="(max-width: 900px) 92vw, 40vw" width="1600" height="1065" loading="lazy" alt="Vacas pastando en un prado verde al amanecer">
+          <figcaption>Las vacas de una de las dos ganaderías con las que trabajamos.</figcaption>
+        </figure>
+        <div class="voces">
+          <h3>Del cuaderno de la tienda</h3>
+          <p class="voces__aviso">Notas de muestra, escritas para esta demostración. No proceden de ninguna plataforma ni de ningún cliente real.</p>
+          <blockquote><p>«Vine a por uno tierno y me fui con el de invierno. Cosas que pasan cuando te dejan probar.»</p><footer>Elvira, de Monterroso</footer></blockquote>
+          <blockquote><p>«Los críos se pasaron la visita entera mirando la cuajada. Ni un móvil en hora y cuarto.»</p><footer>Familia Quintás</footer></blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 08 · CONTACTO ============ -->
+  <section class="contacto seccion" id="contacto">
+    <p class="seccion__indice"><span>07</span> Contacto</p>
+    <div class="contacto__rejilla">
+      <div class="contacto__texto">
+        <h2 class="titular" data-reveal>Lugar de Bardanca, 11</h2>
+        <p>El obrador está a cuatro kilómetros de Palas de Rei, por la carretera de Monterroso, y hay un cartel de madera en el cruce. Se llega en coche; el autobús no pasa por aquí.</p>
+        <ul class="contacto__datos">
+          <li><span>Teléfono</span><a href="tel:+34982000021">982 00 00 21</a></li>
+          <li><span>WhatsApp</span><a href="https://wa.me/34600000021" rel="noopener">600 00 00 21</a></li>
+          <li><span>Correo</span><a href="mailto:obrador@bardanca.example">obrador@bardanca.example</a></li>
+          <li><span>En el obrador</span>Celsa Bardanca y Xurxo Rei</li>
+          <li><span>Registro</span>Obrador de muestra, sin número sanitario real</li>
+        </ul>
+        <p class="contacto__nota">En un obrador de verdad, aquí iría el número de registro sanitario. Esta demostración no inventa ninguno.</p>
+      </div>
+
+      <div class="contacto__mapa">
+        <div class="mapa-consent" id="mapaConsent">
+          <svg class="mapa-consent__dibujo" viewBox="0 0 300 170" aria-hidden="true" focusable="false">
+            <path d="M0 120c50-6 70-40 120-40s72 34 120 26 44-26 60-30" fill="none" stroke="currentColor" stroke-width="1.4" opacity=".45"></path>
+            <path d="M0 148c56-8 78-26 128-26s70 22 116 14" fill="none" stroke="currentColor" stroke-width="1.4" opacity=".28"></path>
+            <circle cx="150" cy="84" r="24" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".5"></circle>
+            <circle cx="150" cy="84" r="5" fill="currentColor"></circle>
+            <path d="M150 89v28" stroke="currentColor" stroke-width="1.5"></path>
+            <path d="M104 52h40v26h-40zM196 62h34v22h-34z" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".4"></path>
+          </svg>
+          <p>El mapa lo carga Google y pone cookies suyas. Solo aparece si lo pides tú.</p>
+          <button class="boton boton--linea" type="button" id="mapaBoton">Cargar el mapa de Google</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie" id="pie">
+  <div class="pie__rejilla">
+    <div class="pie__marca">
+      <svg class="marca__icono" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="3"></circle>
+        <path d="M20 20 20 3a17 17 0 0 1 14.7 8.5Z" fill="currentColor"></path>
+      </svg>
+      <p class="pie__nombre">Queixería Bardanca</p>
+      <p class="pie__lema">Obrador de leche cruda en la Ulloa, desde 2016.</p>
+    </div>
+    <div class="pie__bloque">
+      <h2>Dónde</h2>
+      <p>Lugar de Bardanca, 11<br>27200 Palas de Rei · Lugo</p>
+      <p><a href="tel:+34982000021">982 00 00 21</a><br><a href="mailto:obrador@bardanca.example">obrador@bardanca.example</a></p>
+    </div>
+    <div class="pie__bloque">
+      <h2>Tienda</h2>
+      <p>Miércoles a viernes<br>10:00 – 14:00 · 16:30 – 19:30<br>Sábado 10:00 – 14:00<br>Visitas, viernes a las 10:30</p>
+    </div>
+    <div class="pie__bloque">
+      <h2>Legal</h2>
+      <ul>
+        <li><a href="aviso-legal.html">Aviso legal</a></li>
+        <li><a href="privacidad.html">Privacidad y cookies</a></li>
+        <li><a href="#inicio">Volver arriba</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="pie__demo"><strong>Sitio de demostración.</strong> Queixería Bardanca es un obrador ficticio; los datos, los quesos, los precios, las fotografías y las opiniones son de muestra. No se atribuye ninguna denominación de origen ni ningún premio.</p>
+  <p class="pie__creditos">Fotografías de archivo con licencia Pexels, acreditadas en <code>CREDITOS.md</code>. Ruedas, corte, gráfico y logotipo, dibujados en SVG para esta plantilla.</p>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner" hidden role="dialog" aria-labelledby="cookieTitulo" aria-describedby="cookieTexto">
+  <div class="cookie-banner__texto">
+    <h2 id="cookieTitulo">Sobre las cookies</h2>
+    <p id="cookieTexto">Esta web no usa cookies de seguimiento ni analítica. Solo guardamos en tu navegador que ya has visto este aviso. El mapa de Google únicamente se carga si pulsas el botón.</p>
+  </div>
+  <div class="cookie-banner__acciones">
+    <a class="cookie-banner__mas" href="privacidad.html">Más detalle</a>
+    <button class="boton boton--paja" type="button" id="cookieAceptar">Entendido</button>
+  </div>
+</div>
+
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor__forma"></span>
+  <span class="cursor__texto" id="cursorTexto"></span>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
