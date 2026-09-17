@@ -11,7 +11,7 @@
   --panel-hondo: #dccca9;
   --tinta: #33271b;
   --tinta-media: #6b5942;
-  --tinta-suave: #957f63;
+  --tinta-suave: #695942; /* era #957f63: 3,16 de contraste sobre el fondo */
   --paja: #d9a41f;
   --paja-honda: #a87a12;
   --musgo: #6e7a52;
@@ -588,3 +588,15 @@ html.has-motion .rueda--hero .rueda__cuna { transition: transform 1.1s var(--cur
 .pagina-404 svg { width: 110px; margin: 0 auto 1rem; }
 .pagina-404 h1 { font-size: clamp(2.2rem, 1.5rem + 4vw, 4rem); }
 .pagina-404 p { color: var(--tinta-media); max-width: 46ch; margin-inline: auto; }
+
+/* ── Contraste: el número del índice va en paja honda (3,56 sobre la crema y
+   3,18 sobre el fondo). Agrandado y en negrita, su umbral baja a 3 y el color
+   de marca no se toca. ───────────────────────────────────────────────────── */
+.seccion__indice span { font-size: 1.25rem; font-weight: 700; }
+
+/* ── Contraste ────────────────────────────────────────────────────────────
+   «días» iba en paja honda a 11 px (3,56): pasa a tinta media, que es otro
+   token de la misma paleta y da 6,2. El día de mercado ya está por encima de
+   14 pt: en negrita, su umbral baja a 3 y el color de marca se queda. */
+#cura-0 span, .cura__unidad { color: var(--tinta-media); }
+.mercado__dia b { font-weight: 700; }
