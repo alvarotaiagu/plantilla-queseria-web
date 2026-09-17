@@ -1,0 +1,27 @@
+{
+  "errores": [
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED"
+  ],
+  "fallos": [
+    "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js :: net::ERR_FAILED",
+    "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js :: net::ERR_FAILED",
+    "https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js :: net::ERR_FAILED"
+  ],
+  "pruebas": {
+    "estado": "Cerrado ahora · abrimos hoy a las 10:00",
+    "filaHoy": "Viernes",
+    "curaInicial": "cura cura--0 | Tierno · 20 días | 9,90 €",
+    "heroCortado": "true | cuna: matrix(0.965926, -0.258819, 0.",
+    "cura400": "cura cura--0 | Tierno · 20 días | 9,90 € | rgb(234, 223, 192)  →  cura cura--3 | De invierno · 400 días | 23,00 € | rgb(90, 68, 38)",
+    "cura20": "De invierno · 400 días | Más de un año en la cava: la pieza ha pe  →  Tierno · 20 días | A las tres semanas la corteza todavía no",
+    "cookiesVisible": true,
+    "cookiesCerrado": true,
+    "mapaIframe": 1,
+    "menu": "true -> false",
+    "sinGsap": "has-motion:false · titular:1 · cortada:true · cura:Tierno · 20 días · estado:Cerrado ahora · abrimos hoy a  · contador:640 · grafico:true",
+    "reduce": "has-motion:false · tras pulsar 180 dias: Curado · 180 días / 16,00 € · estado:Cerrado ahora · abrimos hoy a  · contador:640"
+  },
+  "longtask": "79"
+}

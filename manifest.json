@@ -1,0 +1,14 @@
+{
+  "name": "Queixería Bardanca · obrador de queso (demostración)",
+  "short_name": "Bardanca",
+  "description": "Plantilla de demostración para quesería artesanal. Negocio ficticio.",
+  "lang": "es",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f2e9d6",
+  "theme_color": "#f2e9d6",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

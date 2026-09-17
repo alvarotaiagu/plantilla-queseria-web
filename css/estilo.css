@@ -191,6 +191,14 @@ html.has-motion .preloader {
 
 .hero__rueda { display: grid; justify-items: center; }
 .rueda { width: min(100%, 380px); height: auto; overflow: visible; }
+/* la del hero enseña una pieza de noventa días, que es la del pie de foto */
+.rueda--hero { --corteza: #c2a674; --pasta: #f6e7c2; --moho: #8d9479; --moho-op: .55; }
+.rueda--hero .rueda__corteza,
+.rueda--hero .rueda__cunaCorteza { stroke: rgba(51, 39, 27, .3); stroke-width: 2; }
+/* la cuña separada se ve mejor con la pasta un punto más oscura y una sombra
+   estática (una sola, en un grupo pequeño: no es blur por fotograma) */
+.rueda--hero .rueda__cunaPasta { fill: #eddcb0; }
+.rueda--hero .rueda__cuna { filter: drop-shadow(-4px 3px 4px rgba(51, 39, 27, .25)); }
 .rueda__sombra ellipse { fill: rgba(51, 39, 27, .14); }
 .rueda__corteza, .rueda__cunaCorteza, .rueda__cantoCorteza, .rueda__cantoTapa { fill: var(--corteza); transition: fill .7s var(--curva); }
 .rueda__pasta, .rueda__cunaPasta { fill: var(--pasta); transition: fill .7s var(--curva); }
